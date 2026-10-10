@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore the SUNWISE Solar Energy Provider Magazine 2026. Discover solar solutions for Filipino homes, businesses, warehouses and farms.">
+<meta name="keywords" content="SUNWISE, solar energy Philippines, solar panel installation Philippines, hybrid solar system, on-grid solar, off-grid solar, solar installation Bulacan">
+<meta property="og:title" content="SUNWISE Solar Energy Provider Magazine 2026"><meta property="og:description" content="Let the Sun Pay Your Bills. Explore solar solutions for Filipino homes and businesses.">
+<meta name="theme-color" content="#0f3b2a"><title>SUNWISE Solar Energy Provider Magazine 2026</title>
+<style>
+:root{--green:#12543b;--deep:#0c2f21;--lime:#f4c629;--ink:#16221b;--muted:#34443a;--paper:#e6ede7;--line:#cdd9d0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:19px;line-height:1.65;background:radial-gradient(900px 520px at 6% -4%,rgba(244,198,41,.30),transparent 62%),radial-gradient(820px 520px at 100% 22%,rgba(18,84,59,.20),transparent 62%),linear-gradient(rgba(18,84,59,.08) 1px,transparent 1px) 0 0/46px 46px,linear-gradient(90deg,rgba(18,84,59,.08) 1px,transparent 1px) 0 0/46px 46px,linear-gradient(180deg,#f1f7ec 0%,#d9eadd 100%);background-attachment:fixed}
+
+/* HEADER */
+header{background:var(--deep);border-bottom:4px solid var(--lime);line-height:0}
+header img{width:100%;height:auto;display:block}
+.intro{text-align:center;margin:0 auto 28px;max-width:940px;background:#fff;border:1px solid var(--line);border-top:6px solid var(--lime);border-radius:16px;padding:30px 26px;box-shadow:0 14px 36px #0c2f2120}
+.intro h1{font-size:clamp(34px,5vw,58px);line-height:1.1;margin:0 0 12px;color:var(--green)}
+.intro p{font-size:21px;line-height:1.65;color:#263329;margin:0}
+.actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:30px 0 8px}
+.btn{border:0;border-radius:10px;padding:16px 28px;font-weight:700;text-decoration:none;cursor:pointer;font-size:19px;min-height:54px;display:inline-flex;align-items:center}
+.primary{background:var(--lime);color:#16221b;box-shadow:0 4px 12px #0c2f2126}
+.secondary{background:var(--green);color:#fff;box-shadow:0 4px 12px #0c2f2126}
+.btn:hover{filter:brightness(1.07)}
+.btn:focus-visible,.control:focus-visible,.soc:focus-visible{outline:3px solid #1d6fd6;outline-offset:3px}
+
+/* MAGAZINE VIEWER */
+.wrap{max-width:1900px;margin:34px auto;padding:0 1.5vw}
+.viewer{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 18px 44px #0c2f2122}
+.viewer-top{padding:16px 22px;background:var(--deep);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.viewer-top strong{font-size:18px;letter-spacing:.08em}
+#status{font-size:18px;color:#d6e6dc}
+.stage{height:min(92vh,1000px);padding:8px 6px;display:flex;overflow:auto;background:radial-gradient(760px 460px at 12% 8%,rgba(244,198,41,.38),transparent 62%),radial-gradient(860px 540px at 92% 92%,rgba(52,168,116,.50),transparent 62%),linear-gradient(135deg,#21704d 0%,#12543b 45%,#0c2f21 100%)}
+#book{position:relative;margin:auto;flex:none;perspective:2800px}
+.slot{position:absolute;top:0}
+.slot.has{background:#fff;box-shadow:0 16px 44px rgba(0,0,0,.45);cursor:pointer}
+.slot canvas,.face canvas{display:block}
+.slot.has.right::after,.slot.has.left::after{content:"";position:absolute;inset:0;pointer-events:none}
+.slot.has.right::after{background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 7%)}
+.slot.has.left::after{background:linear-gradient(270deg,rgba(0,0,0,.22),rgba(0,0,0,0) 7%)}
+.flipper{position:absolute;top:0;transform-style:preserve-3d;z-index:5;will-change:transform}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.face.back{transform:rotateY(180deg)}
+.slot.empty{display:block;visibility:hidden;flex:none}
+.flipwrap{position:relative;perspective:3200px;flex:none}
+.flipper{position:absolute;top:0;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.45,.05,.25,1)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.face.back{transform:rotateY(180deg)}
+.face canvas{display:block}
+.flipper .face::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 35%)}
+.flipper .face.back::after{background:linear-gradient(270deg,rgba(0,0,0,.22),rgba(0,0,0,0) 35%)}
+.controls{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;padding:20px 14px;background:#f1f5f1;border-top:1px solid var(--line)}
+.control{background:var(--green);color:#fff;border:0;border-radius:10px;padding:14px 18px;font-weight:700;font-size:19px;min-height:58px;cursor:pointer;white-space:nowrap}
+.control.big{background:var(--lime);color:#16221b}
+.control:hover:not(:disabled){filter:brightness(1.1)}
+.control:disabled{opacity:.4;cursor:not-allowed}
+.counter{font-size:21px;font-weight:700;color:var(--deep);min-width:150px;text-align:center;white-space:nowrap}
+.help{text-align:center;font-size:18px;color:var(--muted);padding:6px 16px 22px;background:#f1f5f1}
+.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:30px 0}
+.detail{background:#fff;padding:26px;border:1px solid var(--line);border-top:5px solid var(--green);border-radius:12px;box-shadow:0 8px 22px #0c2f2112}
+.detail h2{font-size:26px;margin:0 0 10px;color:var(--green)}
+.detail p{font-size:20px;line-height:1.65;color:#263329;margin:0}
+.error{color:#8a1f1f;background:#fff0f0;border:2px solid #efc4c4;padding:20px;border-radius:10px;max-width:760px;margin:20px auto;align-self:center;text-align:left;line-height:1.6;font-size:18px}
+.hide{display:none!important}
+.viewer:fullscreen{display:flex;flex-direction:column;border-radius:0}
+.viewer:fullscreen .stage{flex:1;height:auto;min-height:0}
+
+/* FOOTER */
+footer{background:var(--deep);color:#d6e6dc;text-align:center;padding:36px 18px 40px;font-size:18px;line-height:1.9}
+footer strong{color:#fff;font-size:21px}
+footer a{color:var(--lime);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.socials{display:flex;gap:14px;justify-content:center;margin:14px 0}
+.soc{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;box-shadow:0 4px 12px #00000040;transition:transform .15s}
+.soc:hover{transform:translateY(-3px);text-decoration:none}
+.soc.maps{background:#ea4335}.soc.fb{background:#1877f2}.soc.tt{background:#000;border:1px solid #ffffff55}.soc.ms{background:linear-gradient(135deg,#00b2ff,#a334fa 60%,#ff5c87)}
+
+@media(max-width:700px){body{font-size:18px}.intro{padding:22px 16px}.intro p{font-size:19px}.btn{width:100%;justify-content:center}.control{padding:14px 18px;font-size:18px;flex:1 1 40%}.counter{flex:1 1 100%;order:-1}.wrap{padding:0;margin:14px auto}.viewer{border-radius:0;border-left:0;border-right:0}.stage{padding:4px 0}.intro,.actions,.details{margin-left:12px;margin-right:12px}}
+
+@media(max-width:759px){
+  .viewer{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+  .viewer-top{padding:8px 12px}
+  .viewer-top strong{font-size:14px;letter-spacing:.04em}
+  #status{display:none}
+  .stage{flex:1;height:auto;min-height:0}
+  #book{margin:auto}
+  .controls{padding:8px 6px;gap:6px}
+  .counter{flex:1 1 100%;order:-1;font-size:18px;min-width:0}
+  .control{flex:1 1 22%;padding:10px 4px;font-size:15px;min-height:46px}
+  #zoomout,#zoomin,#fullscreen{flex:1 1 30%}
+  .help{display:none}
+}
+</style>
+</head>
+<body>
+<header><img src="gptimagebg.png" alt="SUNWISE Solar Energy Provider - Solar Panel Installation Services"></header>
+
+<main class="wrap">
+<div class="intro"><h1>Let the Sun Pay Your Bills ☀️</h1><p>Explore the SUNWISE Solar Energy Provider Magazine 2026 — solar solutions for Filipino homes, businesses, warehouses and farms.</p></div>
+<section class="viewer" id="read-magazine" aria-label="SUNWISE digital magazine flipbook"><div class="viewer-top"><strong>OFFICIAL DIGITAL MAGAZINE · 2026</strong><span id="status">Preparing your magazine…</span></div><div class="stage"><div id="book"></div><div id="error" class="error hide"></div></div><div class="controls"><button id="first" class="control" disabled>⟪ First</button><button id="prev" class="control" disabled>← Previous</button><span id="counter" class="counter">Loading pages…</span><button id="next" class="control" disabled>Next →</button><button id="last" class="control" disabled>Last ⟫</button><button id="zoomout" class="control" aria-label="Make pages smaller">🔍 Zoom −</button><button id="zoomin" class="control" aria-label="Make pages bigger">🔍 Zoom +</button><button id="fullscreen" class="control big">⛶ Full screen</button></div><div class="help">Press the big buttons, tap the left or right side of the page, or use the arrow keys to turn pages. Press <strong>Zoom +</strong> to make the pages bigger. Needs an internet connection.</div></section>
+<div class="actions"><a class="btn primary" href="sunwise-magazine-2026.pdf" download>⬇ Download the PDF</a><a class="btn secondary" href="#read-magazine">Read the Flipbook</a></div>
+<section class="details"><article class="detail"><h2>Solar for Every Need</h2><p>Explore residential, commercial, industrial and agricultural solar solutions shaped around site conditions and electricity use.</p></article><article class="detail"><h2>Understand Your Options</h2><p>Learn about on-grid, hybrid and off-grid systems, batteries, equipment and monitoring.</p></article><article class="detail"><h2>Start Your Solar Journey</h2><p>Ask SUNWISE about a site-specific solar assessment and quotation for your property.</p></article></section></main>
+
+<footer><strong>SUNWISE Solar Energy Provider</strong><br><a href="https://www.sunwiseph.com/">www.sunwiseph.com</a> · <a href="mailto:sunwise.ph@gmail.com">sunwise.ph@gmail.com</a><br>0993-909-7102 · 0994-685-5312<div class="socials"><a class="soc maps" href="https://www.google.com/maps/place/Sunwise+E.P.+Solar+Panel+Installation+Services/@14.7957489,121.0308445,1078m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3397af9b2448f3d9:0x38b9302a0ac38bb5!8m2!3d14.7957489!4d121.0308445!16s%2Fg%2F11ylbq8bgw?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" aria-label="Find SUNWISE on Google Maps" title="Google Maps"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></svg></a><a class="soc fb" href="https://www.facebook.com/profile.php?id=61556579514456" target="_blank" rel="noopener" aria-label="SUNWISE on Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 8.500V6.800c0-.8.200-1.300 1.400-1.300H17V2.300C16.700 2.300 15.800 2.200 14.800 2.200 12.500 2.200 11 3.600 11 6.200v2.300H8.500V12H11v9.800h3V12h2.400l.4-3.500H14z"/></svg></a><a class="soc tt" href="https://www.tiktok.com/@sunwise.solar.ene4?_r=1" target="_blank" rel="noopener" aria-label="SUNWISE on TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.600 5.800A4.300 4.300 0 0 1 15.500 3h-3.100v12.400a2.600 2.600 0 1 1-2.600-2.600c.3 0 .5 0 .8.100V9.700a5.700 5.700 0 1 0 4.900 5.700V9.100a7.300 7.300 0 0 0 4.200 1.300V7.300a4.300 4.300 0 0 1-3.100-1.500z"/></svg></a><a class="soc ms" href="https://m.me/profile.php?id=61556579514456" target="_blank" rel="noopener" aria-label="Message SUNWISE on Messenger" title="Messenger"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.500 2 2 6.200 2 11.500c0 2.900 1.300 5.500 3.500 7.200V22l3.200-1.800c.9.200 1.700.4 2.700.4 5.500 0 10-4.200 10-9.500S17.500 2 12 2zm1 12.800l-2.500-2.700-4.900 2.700 5.400-5.700 2.600 2.700 4.800-2.700-5.400 5.700z"/></svg></a></div>Francisco Homes III, Brgy Muzon Proper, City of San Jose del Monte, Bulacan, Philippines</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(async function(){
+const PDF_URL='sunwise-magazine-2026.pdf';
+const FLIP_MS=800;
+const $=id=>document.getElementById(id);
+const status=$('status'),errorBox=$('error'),counter=$('counter'),book=$('book'),stage=document.querySelector('.stage');
+const ZOOMS=[1,1.25,1.5,2,2.5,3];
+let pdf=null,total=0,ratio=0.707,zi=0,curPage=1,token=0,animating=false,shown=null;
+const cache=new Map();
+const isMobile=()=>window.innerWidth<760;
+
+function spreads(){
+  if(isMobile())return Array.from({length:total},(_,i)=>[i+1]);
+  const r=[[null,1]];
+  for(let p=2;p<=total;p+=2)r.push(p+1<=total?[p,p+1]:[p,null]);
+  return r;
+}
+function spreadIndex(list){
+  for(let i=0;i<list.length;i++)if(list[i].includes(curPage))return i;
+  return 0;
+}
+function baseSize(){
+  const cs=getComputedStyle(stage);
+  const padX=parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight);
+  const padY=parseFloat(cs.paddingTop)+parseFloat(cs.paddingBottom);
+  const viewer=document.querySelector('.viewer');
+  const cols=isMobile()?1:2;
+  viewer.style.maxWidth='';
+  let availW,availH;
+  if(document.fullscreenElement||isMobile()){
+    stage.style.height='';
+    availW=stage.clientWidth-padX;
+    availH=stage.clientHeight-padY;
+  }else{
+    availW=stage.clientWidth-padX;
+    /* pages fill the stage width, but never taller than the screen */
+    availH=Math.min(availW/cols/ratio,isMobile()?1500:Math.max(560,window.innerHeight-30));
+    stage.style.height=Math.round(availH+padY)+'px';
+  }
+  const w=Math.max(160,Math.min(availW/cols,availH*ratio));
+  return {w:w,h:w/ratio};
+}
+/* Pages are drawn with extra detail (at least 2x the screen pixels, more when the visitor pinch-zooms)
+   and the browser shrinks them smoothly, so text stays sharp even if the visitor zooms in. */
+function renderScale(){
+  const dpr=window.devicePixelRatio||1;
+  const vv=(window.visualViewport&&window.visualViewport.scale)?Math.max(1,window.visualViewport.scale):1;
+  return Math.max(dpr,2)*vv;
+}
+function sizes(){
+  const rs=renderScale();
+  const b=baseSize();
+  const z=ZOOMS[zi];
+  const H=b.h*z,W=b.w*z;
+  const Hpx=Math.min(4800,Math.max(200,Math.round(H*rs)));
+  const Wpx=Math.round(Hpx*ratio);
+  return {dpr:rs,Hpx:Hpx,Wpx:Wpx,W:W,H:H};
+}
+function renderPage(num,S){
+  const key=num+'_'+S.Hpx;
+  if(cache.has(key))return cache.get(key);
+  const prom=(async()=>{
+    const page=await pdf.getPage(num);
+    const base=page.getViewport({scale:1});
+    const vp=page.getViewport({scale:S.Hpx/base.height});
+    const c=document.createElement('canvas');
+    c.width=S.Wpx;c.height=S.Hpx;
+    const ctx=c.getContext('2d',{alpha:false});
+    ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);
+    await page.render({canvasContext:ctx,viewport:vp}).promise;
+    page.cleanup();
+    return c;
+  })();
+  cache.set(key,prom);
+  prom.catch(()=>cache.delete(key));
+  while(cache.size>9)cache.delete(cache.keys().next().value);
+  return prom;
+}
+function getCanvases(sp,S){return Promise.all(sp.map(n=>n?renderPage(n,S):Promise.resolve(null)));}
+function fit(c,S){c.style.width=S.W+'px';c.style.height=S.H+'px';return c;}
+function makeSlot(cls,left,canvas,S){
+  const d=document.createElement('div');
+  d.className='slot '+cls+(canvas?' has':'');
+  d.style.left=left+'px';d.style.width=S.W+'px';d.style.height=S.H+'px';
+  if(canvas)d.appendChild(fit(canvas,S));
+  return d;
+}
+function setBookSize(S,two){book.style.width=(two?2*S.W:S.W)+'px';book.style.height=S.H+'px';}
+function buildStatic(sp,cv,S){
+  const two=sp.length===2;
+  setBookSize(S,two);
+  if(two)book.replaceChildren(makeSlot('left',0,cv[0],S),makeSlot('right',S.W,cv[1],S));
+  else book.replaceChildren(makeSlot('single',0,cv[0],S));
+}
+function updateUI(list,idx){
+  const nums=list[idx].filter(Boolean);
+  counter.textContent=nums.length===2?'Pages '+nums[0]+'–'+nums[1]+' of '+total:'Page '+nums[0]+' of '+total;
+  $('first').disabled=idx<=0;$('prev').disabled=idx<=0;
+  $('next').disabled=idx>=list.length-1;$('last').disabled=idx>=list.length-1;
+  $('zoomout').disabled=zi<=0;$('zoomin').disabled=zi>=ZOOMS.length-1;
+  $('zoomin').textContent='🔍 Zoom +'+(zi>0?' ('+Math.round(ZOOMS[zi]*100)+'%)':'');
+}
+function prefetch(list,idx,S){
+  [list[idx+1],list[idx-1]].forEach(sp=>{if(sp)getCanvases(sp,S).catch(()=>{});});
+}
+async function layoutStatic(idx){
+  const my=++token;
+  const list=spreads();
+  idx=Math.max(0,Math.min(idx,list.length-1));
+  const sp=list[idx],S=sizes();
+  try{
+    const cv=await getCanvases(sp,S);
+    if(my!==token)return;
+    buildStatic(sp,cv,S);
+    curPage=sp.find(Boolean);
+    shown={idx:idx,Hpx:S.Hpx};
+    stage.scrollLeft=(stage.scrollWidth-stage.clientWidth)/2;
+    stage.scrollTop=0;
+    updateUI(list,idx);
+    status.textContent=total+' pages · Ready to read';
+    prefetch(list,idx,S);
+  }catch(e){console.error(e);status.textContent='A page could not be drawn. Please refresh.';}
+}
+function makeFlipper(front,back,S,left,origin){
+  const f=document.createElement('div');
+  f.className='flipper';
+  f.style.left=left+'px';f.style.width=S.W+'px';f.style.height=S.H+'px';f.style.transformOrigin=origin;
+  const a=document.createElement('div');a.className='face front';
+  if(front)a.appendChild(fit(front,S));
+  f.appendChild(a);
+  const b=document.createElement('div');b.className='face back';
+  if(back)b.appendChild(fit(back,S));
+  f.appendChild(b);
+  return f;
+}
+async function goTo(idx){
+  if(animating)return;
+  const list=spreads();
+  idx=Math.max(0,Math.min(idx,list.length-1));
+  const from=shown?shown.idx:0;
+  if(idx===from)return;
+  const S=sizes();
+  if(!shown||S.Hpx!==shown.Hpx||Math.abs(idx-from)!==1){await layoutStatic(idx);return;}
+  animating=true;
+  token++;
+  try{
+    const A=list[from],B=list[idx],fwd=idx>from;
+    const [cA,cB]=await Promise.all([getCanvases(A,S),getCanvases(B,S)]);
+    let flipper;
+    if(A.length===2){
+      if(fwd){
+        book.replaceChildren(makeSlot('left',0,cA[0],S),makeSlot('right',S.W,cB[1],S));
+        flipper=makeFlipper(cA[1],cB[0],S,S.W,'left center');
+      }else{
+        book.replaceChildren(makeSlot('left',0,cB[0],S),makeSlot('right',S.W,cA[1],S));
+        flipper=makeFlipper(cA[0],cB[1],S,0,'right center');
+      }
+      book.appendChild(flipper);
+      flipper.getBoundingClientRect();
+      flipper.style.transition='transform '+FLIP_MS+'ms cubic-bezier(.45,.05,.25,1)';
+      flipper.style.transform=fwd?'rotateY(-180deg)':'rotateY(180deg)';
+    }else{
+      book.replaceChildren(makeSlot('single',0,fwd?cB[0]:cA[0],S));
+      flipper=makeFlipper(fwd?cA[0]:cB[0],null,S,0,'left center');
+      flipper.style.transform=fwd?'none':'rotateY(-100deg)';
+      flipper.style.opacity=fwd?'1':'0';
+      book.appendChild(flipper);
+      flipper.getBoundingClientRect();
+      flipper.style.transition='transform '+FLIP_MS+'ms cubic-bezier(.45,.05,.25,1),opacity '+FLIP_MS+'ms ease';
+      flipper.style.transform=fwd?'rotateY(-100deg)':'none';
+      flipper.style.opacity=fwd?'0':'1';
+    }
+    await new Promise(r=>setTimeout(r,FLIP_MS+40));
+    buildStatic(B,cB,S);
+    curPage=B.find(Boolean);
+    shown={idx:idx,Hpx:S.Hpx};
+    updateUI(list,idx);
+    prefetch(list,idx,S);
+  }catch(e){
+    console.error(e);
+    await layoutStatic(idx);
+  }
+  animating=false;
+}
+const cur=()=>shown?shown.idx:0;
+const last=()=>spreads().length-1;
+
+let wired=false;
+function wire(){
+  if(wired)return;wired=true;
+  $('first').onclick=()=>goTo(0);
+  $('prev').onclick=()=>goTo(cur()-1);
+  $('next').onclick=()=>goTo(cur()+1);
+  $('last').onclick=()=>goTo(last());
+  $('zoomin').onclick=()=>{if(zi<ZOOMS.length-1&&!animating){zi++;layoutStatic(cur());}};
+  $('zoomout').onclick=()=>{if(zi>0&&!animating){zi--;layoutStatic(cur());}};
+  $('fullscreen').onclick=()=>{
+    const el=document.querySelector('.viewer');
+    if(!document.fullscreenElement)el.requestFullscreen&&el.requestFullscreen();
+    else document.exitFullscreen&&document.exitFullscreen();
+  };
+  book.addEventListener('click',e=>{
+    if(ZOOMS[zi]>1)return;
+    const r=book.getBoundingClientRect();
+    const frac=(e.clientX-r.left)/r.width;
+    if(frac<(isMobile()?0.4:0.5))goTo(cur()-1);else goTo(cur()+1);
+  });
+  let tx=0,ty=0;
+  stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
+  stage.addEventListener('touchend',e=>{
+    if(ZOOMS[zi]>1)return;
+    const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>50&&Math.abs(dy)<60){if(dx<0)goTo(cur()+1);else goTo(cur()-1);}
+  },{passive:true});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight')goTo(cur()+1);
+    else if(e.key==='ArrowLeft')goTo(cur()-1);
+    else if(e.key==='+'||e.key==='=')$('zoomin').click();
+    else if(e.key==='-')$('zoomout').click();
+  });
+  let rt=null;
+  const relayout=()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!animating&&pdf)layoutStatic(spreadIndex(spreads()));},220);};
+  window.addEventListener('resize',relayout);
+  if(window.visualViewport){
+    let vt=null,lastScale=window.visualViewport.scale||1;
+    window.visualViewport.addEventListener('resize',()=>{
+      clearTimeout(vt);
+      vt=setTimeout(()=>{
+        const sc=window.visualViewport.scale||1;
+        if(Math.abs(sc-lastScale)>0.05){lastScale=sc;if(!animating&&pdf)layoutStatic(cur());}
+      },300);
+    });
+  }
+  document.addEventListener('fullscreenchange',relayout);
+}
+async function start(src){
+  if(!window.pdfjsLib)throw new Error('The PDF viewer library did not load. Check your internet connection and refresh the page.');
+  pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  status.textContent='Loading magazine PDF…';
+  cache.clear();shown=null;curPage=1;
+  pdf=await pdfjsLib.getDocument(src).promise;
+  total=pdf.numPages;
+  const p1=await pdf.getPage(1);
+  const v1=p1.getViewport({scale:1});
+  ratio=v1.width/v1.height;
+  wire();
+  errorBox.classList.add('hide');
+  await layoutStatic(0);
+}
+function showError(e){
+  console.error(e);
+  status.textContent='The flipbook could not load';
+  errorBox.classList.remove('hide');
+  errorBox.textContent='Sorry, the flipbook could not be prepared. '+(e&&e.message?e.message:'Please refresh and try again.')+' You can still download the complete magazine using the Download the PDF button below the magazine. ';
+  const lab=document.createElement('label');
+  lab.className='btn primary';lab.style.cssText='margin-top:14px;cursor:pointer;display:inline-flex';
+  lab.textContent='📂 Open the PDF from this computer';
+  const inp=document.createElement('input');
+  inp.type='file';inp.accept='application/pdf,.pdf';inp.style.display='none';
+  inp.onchange=async()=>{
+    const f=inp.files&&inp.files[0];if(!f)return;
+    try{await start({data:new Uint8Array(await f.arrayBuffer())});}catch(err){showError(err);}
+  };
+  lab.appendChild(inp);
+  errorBox.appendChild(document.createElement('br'));
+  errorBox.appendChild(lab);
+  counter.textContent='PDF download available';
+}
+try{
+  let url=PDF_URL;
+  try{url=new URL(PDF_URL,document.baseURI).href;}catch(_){}
+  await start({url:url});
+}catch(e){showError(e);}
+})();
+</script></body></html>
