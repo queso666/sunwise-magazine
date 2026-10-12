@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SUNWISE Solar Energy Provider Magazine 2026</title>
+<meta name="description" content="Explore the SUNWISE Solar Energy Provider Magazine 2026. Discover solar solutions for Filipino homes, businesses, warehouses and farms." />
+<meta name="keywords" content="SUNWISE, solar energy Philippines, solar panel installation Philippines, hybrid solar system, on-grid solar, off-grid solar, solar installation Bulacan" />
+<meta property="og:title" content="SUNWISE Solar Energy Provider Magazine 2026" />
+<meta property="og:description" content="Let the Sun Pay Your Bills. Explore solar solutions for Filipino homes and businesses." />
+<meta name="theme-color" content="#1a2a1a" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="LOGO.png" />
+<link rel="apple-touch-icon" href="LOGO.png" />
+<style>
+  :root {
+    --green: #1c7d33;
+    --green-light: #22a340;
+    --green-dark: #15612a;
+    --gold: #f7b81b;
+    --gold-light: #fce588;
+    --gold-dark: #d9a015;
+    --dark: #111111;
+    --dark-alt: #2D3748;
+    --gray: #2D3748;
+    --gray-light: #718096;
+    --off-white: #f7f7f7;
+    --bg: #F7FAFC;
+    --white: #ffffff;
+    --radius: 12px;
+    --radius-lg: 20px;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+    --transition: 0.3s ease;
+    --font: 'Poppins', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: var(--dark);
+    background: #1a2a1a;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;          /* fully opaque video — no image shows through */
+  }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; transition: color var(--transition); }
+  ul { list-style: none; }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ─── BUTTONS ───────────────────────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .btn-primary {
+    background: var(--green);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(28,125,51,0.4);
+  }
+  .btn-primary:hover {
+    background: var(--green-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(28,125,51,0.5);
+  }
+  .btn-book {
+    background: var(--gold);
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(247,184,27,0.4);
+  }
+  .btn-book:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(247,184,27,0.5);
+  }
+  .btn-secondary {
+    background: var(--gold);
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(247,184,27,0.3);
+  }
+  .btn-secondary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(247,184,27,0.4);
+  }
+  /* used by the flipbook's built-in "open the PDF from this computer" fallback button */
+  .primary {
+    background: var(--gold);
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(247,184,27,0.4);
+  }
+  .primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-white {
+    background: var(--white);
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  .btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    background: var(--gold-light);
+  }
+
+  /* ─── NAVBAR ────────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    transition: all var(--transition);
+  }
+  nav.scrolled {
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 42px; height: 42px; display: grid; place-items: center; }
+  .logo-icon img { width: 42px; height: 42px; object-fit: contain; }
+  .logo-text { font-weight: 800; font-size: 1.3rem; color: var(--gold); }
+  .logo-text span { color: var(--green-light); }
+
+  /* ─── SHINY SWEEP ANIMATION ─────────────────────── */
+  @keyframes shinySweep {
+    0% { -webkit-mask-position: 200%; mask-position: 200%; }
+    100% { -webkit-mask-position: -100%; mask-position: -100%; }
+  }
+  .shiny-text { position: relative; display: inline-block; }
+  .shiny-text::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    color: var(--gold-light);
+    pointer-events: none;
+    font: inherit;
+    letter-spacing: inherit;
+    -webkit-mask-image: linear-gradient(to right, transparent 30%, #000 50%, transparent 70%);
+    mask-image: linear-gradient(to right, transparent 30%, #000 50%, transparent 70%);
+    -webkit-mask-size: 150% auto;
+    mask-size: 150% auto;
+    animation: shinySweep 2.5s ease-in-out infinite;
+  }
+
+  .nav-links { display: flex; align-items: center; gap: 2rem; }
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.02em;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold);
+    color: #1a1a1a !important;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600 !important;
+  }
+  .nav-cta:hover { background: var(--gold-light); }
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+  }
+  .hamburger span {
+    display: block;
+    width: 26px; height: 3px;
+    background: var(--white);
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  /* ─── HERO ──────────────────────────────────────── */
+  #hero {
+    position: relative;
+    min-height: 780px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+  .hero-bg-pattern {
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-bg-pattern2 {
+    position: absolute;
+    bottom: -30%; left: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .hero-badge-dot {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .hero-h1 {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5), 0 4px 30px rgba(0,0,0,0.3);
+  }
+  .hero-h1 em { font-style: normal; color: var(--gold); }
+  .hero-h1 .gold { color: var(--gold); }
+  .hero-sub {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  }
+  /* ─── SECTION BASE ──────────────────────────────── */
+  section { padding: 2.5rem 0; background: transparent; width: 100%; margin: 0; scroll-margin-top: 90px; }
+  .section-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 3.5rem;
+  }
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .section-tag::before, .section-tag::after {
+    content: '';
+    width: 20px; height: 2px;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+  .section-h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 4px 25px rgba(0,0,0,0.3);
+  }
+  .section-h2 em { font-style: normal; color: var(--gold); }
+  .section-h2 .gold { color: var(--gold); }
+  .section-lead {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.8;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  }
+
+  /* ─── MAGAZINE / FLIPBOOK ───────────────────────── */
+  #read-magazine { background: transparent; }
+  .viewer {
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  .viewer-top {
+    padding: 1rem 1.5rem;
+    background: rgba(17,17,17,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .viewer-top strong {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  #status { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+  .stage{
+    height:min(92vh,1000px);padding:8px 6px;display:flex;overflow:auto;
+    background:
+      radial-gradient(760px 460px at 12% 8%,rgba(247,184,27,.28),transparent 62%),
+      radial-gradient(860px 540px at 92% 92%,rgba(34,163,64,.42),transparent 62%),
+      linear-gradient(135deg,#1c7d33 0%,#15612a 45%,#0f2014 100%);
+  }
+  #book{position:relative;margin:auto;flex:none;perspective:2800px}
+  .slot{position:absolute;top:0}
+  .slot.has{background:#fff;box-shadow:0 16px 44px rgba(0,0,0,.45);cursor:pointer}
+  .slot canvas,.face canvas{display:block}
+  .slot.has.right::after,.slot.has.left::after{content:"";position:absolute;inset:0;pointer-events:none}
+  .slot.has.right::after{background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 7%)}
+  .slot.has.left::after{background:linear-gradient(270deg,rgba(0,0,0,.22),rgba(0,0,0,0) 7%)}
+  .flipwrap{position:relative;perspective:3200px;flex:none}
+  .flipper{position:absolute;top:0;transform-style:preserve-3d;z-index:5;will-change:transform;transition:transform .75s cubic-bezier(.45,.05,.25,1)}
+  .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .face.back{transform:rotateY(180deg)}
+  .slot.empty{display:block;visibility:hidden;flex:none}
+  .flipper .face::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 35%)}
+  .flipper .face.back::after{background:linear-gradient(270deg,rgba(0,0,0,.22),rgba(0,0,0,0) 35%)}
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 1.25rem 1rem;
+    background: rgba(255,255,255,0.92);
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .control {
+    font-family: var(--font);
+    background: var(--green);
+    color: var(--white);
+    border: 0;
+    border-radius: 50px;
+    padding: 0.7rem 1.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    min-height: 48px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition);
+  }
+  .control.big { background: var(--gold); color: #1a1a1a; box-shadow: 0 4px 15px rgba(247,184,27,0.4); }
+  .control:hover:not(:disabled) { background: var(--green-light); transform: translateY(-2px); }
+  .control.big:hover:not(:disabled) { background: var(--gold-light); }
+  .control:disabled { opacity: .4; cursor: not-allowed; }
+  .btn:focus-visible,.control:focus-visible,.social-btn:focus-visible{outline:3px solid #1d6fd6;outline-offset:3px}
+  .counter {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark);
+    min-width: 150px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .help {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--gray);
+    padding: 0 1.25rem 1.5rem;
+    background: rgba(255,255,255,0.92);
+  }
+  .error {
+    color: #8a1f1f;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid rgba(238,196,196,0.9);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 760px;
+    margin: 20px auto;
+    align-self: center;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+  .hide { display: none !important; }
+  .viewer:fullscreen { display: flex; flex-direction: column; border-radius: 0; }
+  .viewer:fullscreen .stage { flex: 1; height: auto; min-height: 0; }
+  .mag-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2.5rem; }
+
+  /* ─── PROJECTS (COVERFLOW) ──────────────────────── */
+  #projects { background: transparent; height: auto; width: 100%; margin: 0; }
+  .cf-stage {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    outline: none;
+    user-select: none;
+    touch-action: pan-y;
+  }
+  .cf-viewport { position: absolute; inset: 0; }
+  .cf-card {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background: #111;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(255,255,255,0.05);
+    transition: box-shadow 0.4s ease;
+  }
+  .cf-card.cf-active { box-shadow: 0 24px 70px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(255,255,255,0.06); }
+  .cf-card img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .cf-card-info {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 20px 24px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .cf-card.cf-active .cf-card-info { opacity: 1; }
+  .cf-card-info h4 { font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .cf-card-info p { font-size: 0.82rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
+
+  /* ─── CTA BANNER ────────────────────────────────── */
+  #cta-banner { background: transparent; padding: 4rem 0; height: auto; width: 100%; margin: 0; }
+  .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .cta-content h2 {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .cta-content h2 em { font-style: normal; color: var(--gold); }
+  .cta-content p { font-size: 1rem; color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2rem; }
+  .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .cta-card {
+    background: rgba(255,255,255,0.92);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    border: 1px solid rgba(255,255,255,0.35);
+  }
+  .cta-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 1.5rem; }
+  .cta-form-group { margin-bottom: 1rem; }
+  .cta-form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--dark); margin-bottom: 0.4rem; }
+  .cta-form-group input,
+  .cta-form-group select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    background: rgba(255,255,255,0.35);
+    color: var(--dark);
+    outline: none;
+    transition: border-color var(--transition);
+  }
+  .cta-form-group input:focus,
+  .cta-form-group select:focus { border-color: var(--green); box-shadow: 0 0 0 2px rgba(28,125,51,0.15); }
+  .file-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    border: 2px dashed rgba(45,55,72,0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-height: 60px;
+  }
+  .file-upload-label:hover { border-color: var(--green); background: rgba(28,125,51,0.08); }
+  .file-upload-input { display: none; }
+  .file-upload-text { color: var(--gray-light); font-size: 0.85rem; }
+  .file-upload-label.has-file .file-upload-text { color: var(--green); }
+  .file-upload-label.has-file { border-style: solid; border-color: var(--green); }
+  .image-preview { width: 100%; max-height: 150px; object-fit: cover; border-radius: 8px; margin-top: 0.5rem; display: none; }
+  .cta-form-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: var(--green);
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all var(--transition);
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .cta-form-submit:hover { background: var(--green-light); transform: translateY(-1px); }
+
+  /* ─── PARTNERS MARQUEE ─────────────────────────── */
+  #partners { padding: 1.5rem 0 3rem; background: transparent; max-width: 100%; margin: 0; overflow: hidden; }
+  .partners-heading { text-align: center; margin-bottom: 2.5rem; }
+  .partners-heading span {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    color: var(--gold);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .partners-heading p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0.5rem auto 0;
+  }
+  .partners-track { width: 100%; overflow: hidden; }
+  .partners-slide { display: flex; gap: 3rem; animation: scroll-left 30s linear infinite; width: max-content; }
+  .partner-logo {
+    flex-shrink: 0;
+    padding: 0.6rem 1.5rem;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    height: 60px;
+  }
+  .partner-logo img { max-height: 30px; max-width: 90px; object-fit: contain; }
+  @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* ─── FOOTER ────────────────────────────────────── */
+  footer {
+    background: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.7);
+    padding: 3rem 0 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    margin: 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    min-height: 200px;
+  }
+  .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin: 1rem 0 1.5rem; max-width: 280px; color: rgba(255,255,255,0.6); }
+  .footer-socials { display: flex; gap: 0.75rem; }
+  .social-btn {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    display: grid;
+    place-items: center;
+    color: rgba(255,255,255,0.7);
+    transition: all var(--transition);
+  }
+  .social-btn:hover { background: var(--gold); color: var(--dark); }
+  .social-btn svg { width: 18px; height: 18px; }
+  .footer-col h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .footer-col ul li { margin-bottom: 0.6rem; }
+  .footer-col ul li a { font-size: 0.875rem; color: rgba(255,255,255,0.6); transition: color var(--transition); }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ─── RESPONSIVE ────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .cta-inner { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .cf-stage { height: 380px; }
+    footer { max-width: 100%; height: auto; }
+    section { padding: 4rem 0; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 70px; left: 0; right: 0;
+      background: rgba(0,0,0,0.9);
+      padding: 2rem;
+      gap: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      z-index: 998;
+    }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero-h1 { font-size: 2.2rem; }
+    .hero-sub { font-size: 0.95rem; }
+    .section-h2 { font-size: 1.7rem; }
+    .cf-stage { height: 340px; }
+    .cf-card-info h4 { font-size: 1rem; }
+    .cf-card-info p { font-size: 0.75rem; }
+    .cta-card { padding: 1.75rem; }
+    .footer-col { margin-bottom: 1.5rem; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .partner-logo { min-width: 120px; height: 50px; padding: 0.4rem 1rem; }
+    .partner-logo img { max-height: 26px; max-width: 80px; }
+    .partners-slide { gap: 2rem; }
+    #partners { padding: 1rem 0 2rem; }
+    section { padding: 3rem 0; }
+    .container { padding: 0 1.25rem; }
+    .nav-inner { height: 70px; }
+    #hero { min-height: auto; padding-top: 100px; padding-bottom: 2rem; }
+    footer { max-width: 100%; height: auto; padding: 2rem 0 1rem; }
+  }
+
+  @media (max-width: 480px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-h1 { font-size: 1.8rem; }
+    .cta-inner { gap: 2rem; }
+    .cta-actions { flex-direction: column; }
+    .cta-actions .btn { width: 100%; justify-content: center; }
+    .mag-actions { flex-direction: column; }
+    .mag-actions .btn { width: 100%; justify-content: center; }
+    .footer-brand p { max-width: 100%; }
+    .partner-logo { min-width: 100px; height: 44px; }
+    .partner-logo img { max-height: 22px; max-width: 70px; }
+    .partners-slide { gap: 1.5rem; }
+    .cf-stage { height: 300px; }
+    footer { max-width: 100%; height: auto; padding: 1.5rem 0 1rem; }
+    .section-header { margin-bottom: 2.5rem; }
+    section { padding: 3rem 0; }
+  }
+
+  @media(max-width:759px){
+  .viewer{min-height:0;display:block}
+  .viewer-top{padding:6px 12px;min-height:0}
+  .viewer-top strong{font-size:13px;letter-spacing:.04em}
+  #status{display:none}
+  .stage{flex:none;padding:0}
+  #book{margin:auto}
+  .controls{padding:6px 6px 8px;gap:5px}
+  .control{padding:6px 4px;font-size:14px;min-height:38px;border-radius:8px;flex:1 1 0}
+  #first,#last{flex:0 0 13%}
+  #prev,#next{flex:0 0 23%}
+  .counter{flex:1 1 0;order:0;font-size:14px;min-width:0;padding:0 2px}
+  #zoomout,#zoomin,#fullscreen{flex:1 1 30%}
+  .help{display:none}
+  }
+</style>
+</head>
+<body>
+
+<video id="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
+  <source src="Videos/BGMAINV1.mp4" type="video/mp4" />
+  <source src="BGMAINV1.mp4" type="video/mp4" />
+</video>
+
+<!-- ─── NAVBAR ─────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <div class="logo-icon">
+        <img src="Images/LOGO.png" alt="SUNWISE Logo" />
+      </div>
+      <span class="logo-text shiny-text" data-text="SUNWISE">SUN<span>WISE</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://www.sunwiseph.com/" target="_blank" rel="noopener noreferrer" aria-label="Sunwise home page (opens in a new tab)">Home</a></li>
+      <li><a href="#read-magazine">Magazine</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#footer">Contacts</a></li>
+      <li><a href="#read-magazine" class="nav-cta">Read the Magazine</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-bg-pattern2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span class="shiny-text" data-text="Bringing Solar to Every Filipino Home">Bringing Solar to Every Filipino Home</span>
+      </div>
+      <h1 class="hero-h1 shiny-text" data-text="LET THE SUN PAY YOUR BILLS.">LET THE <em>SUN</em> PAY YOUR BILLS.</h1>
+      <p class="hero-sub">Thousands of Filipino homes and businesses are already saving on electricity. Yours could be next. The Philippines runs on sunlight. We just help you use it — and the SUNWISE Magazine 2026 shows you how.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MAGAZINE FLIPBOOK ─────────────────────── -->
+<section id="read-magazine">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Official Digital Magazine · 2026</span>
+      <h2 class="section-h2">Read the SUNWISE <em>Magazine 2026</em></h2>
+      <p class="section-lead">Flip through the pages just like a real magazine. Discover solar solutions for Filipino homes, businesses, warehouses and farms — or download the complete PDF to read offline.</p>
+    </div>
+    <section class="viewer" aria-label="SUNWISE digital magazine flipbook"><div class="viewer-top"><strong>SUNWISE Solar Energy Provider · Magazine 2026</strong><span id="status">Preparing your magazine…</span></div><div class="stage"><div id="book"></div><div id="error" class="error hide"></div></div><div class="controls"><button id="first" class="control" disabled>⟪ First</button><button id="prev" class="control" disabled>← Previous</button><span id="counter" class="counter">Loading pages…</span><button id="next" class="control" disabled>Next →</button><button id="last" class="control" disabled>Last ⟫</button><button id="zoomout" class="control" aria-label="Make pages smaller">🔍 Zoom −</button><button id="zoomin" class="control" aria-label="Make pages bigger">🔍 Zoom +</button><button id="fullscreen" class="control big">⛶ Full screen</button></div><div class="help">Press the big buttons, tap the left or right side of the page, or use the arrow keys to turn pages. Press <strong>Zoom +</strong> to make the pages bigger. Needs an internet connection.</div></section>
+    <div class="mag-actions">
+      <a class="btn btn-book" href="sunwise-magazine-2026.pdf" download>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download the PDF
+      </a>
+      <a class="btn btn-primary" href="#read-magazine">Read the Flipbook</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-h2">Featured <em>Projects</em></h2>
+      <p class="section-lead">See our successful solar installations across the Philippines.</p>
+    </div>
+    <div class="cf-stage" id="cfStage" tabindex="0" role="group" aria-roledescription="carousel">
+      <div class="cf-viewport" id="cfViewport"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA BANNER ─────────────────────────────── -->
+<section id="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-content">
+        <h2>Ready to <em>Solar Installation?</em></h2>
+        <p>Get your free site assessment and custom solar proposal today. Our engineers will design the right system for your home or business.</p>
+        <div class="cta-actions">
+          <a href="tel:+639946855312" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Us Now
+          </a>
+          <a href="https://www.facebook.com/messages/t/221772361024566" target="_blank" rel="noopener noreferrer" class="btn btn-book">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send an Inquiry
+          </a>
+        </div>
+      </div>
+      <div class="cta-card">
+        <h3>Request a Quotation</h3>
+        <form action="https://formsubmit.co/sunwise.ph@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Solar Quote Request">
+          <input type="hidden" name="_template" value="table">
+          <div class="cta-form-group">
+            <label>Full Name</label>
+            <input type="text" name="Full_Name" placeholder="Juan Dela Cruz" required />
+          </div>
+          <div class="cta-form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="Phone_Number" placeholder="+63 9XX XXX XXXX" required />
+          </div>
+          <div class="cta-form-group">
+            <label>Email Address</label>
+            <input type="email" name="Email_Address" placeholder="example@email.com" required />
+          </div>
+          <div class="cta-form-group">
+            <label>Property Type</label>
+            <select name="Property_Type">
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Industrial</option>
+            </select>
+          </div>
+          <div class="cta-form-group">
+            <label>System Type</label>
+            <select name="System_Type" id="systemType">
+              <option>Ongrid System</option>
+              <option>Hybrid System</option>
+            </select>
+          </div>
+          <div class="cta-form-group">
+            <label>Kilowatt (KW)</label>
+            <select name="Kilowatt" id="kilowatt">
+              <option>3.6KW</option>
+              <option>6.0KW</option>
+              <option>7.2KW</option>
+              <option>8.4KW</option>
+              <option>9.6KW</option>
+              <option>10.8KW</option>
+              <option>12.0KW</option>
+              <option>16.0KW</option>
+            </select>
+          </div>
+          <div class="cta-form-group">
+            <label>Average Monthly Bill (₱)</label>
+            <input type="number" name="Average_Monthly_Bill" placeholder="e.g. 5000" required />
+          </div>
+          <div class="cta-form-group">
+            <label>Front View of House</label>
+            <label class="file-upload-label">
+              <input type="file" name="Front_View_of_House" accept="image/*" class="file-upload-input" />
+              <span class="file-upload-text">Choose or drag photo</span>
+            </label>
+            <img class="image-preview" id="house-preview" />
+          </div>
+          <div class="cta-form-group">
+            <label>Roof Type</label>
+            <select name="Roof_Type">
+              <option>Gable</option>
+              <option>Hip</option>
+              <option>Flat</option>
+              <option>Mansard</option>
+              <option>Butterfly</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="cta-form-group">
+            <label>Electric Meter Photo</label>
+            <label class="file-upload-label">
+              <input type="file" name="Electric_Meter_Photo" accept="image/*" class="file-upload-input" />
+              <span class="file-upload-text">Choose or drag photo</span>
+            </label>
+            <img class="image-preview" id="meter-preview" />
+          </div>
+          <button type="submit" class="cta-form-submit">Submit Quote Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PARTNERS ─────────────────────────────────── -->
+<section id="partners">
+  <div class="partners-heading">
+    <span>Partner Brands</span>
+    <p>We partner with globally recognized Tier 1 solar manufacturers to provide premium-quality solar panels, inverters, and energy storage solutions. Our trusted brands ensure exceptional performance, long-term reliability, and maximum energy savings for every installation.</p>
+  </div>
+  <div class="partners-track">
+    <div class="partners-slide">
+      <div class="partner-logo"><img src="Images/Jinko.png" alt="Jinko Solar" /></div>
+      <div class="partner-logo"><img src="Images/Srne.png" alt="SRNE" /></div>
+      <div class="partner-logo"><img src="Images/Trinasolar.png" alt="Trina Solar" /></div>
+      <div class="partner-logo"><img src="Images/Solis.png" alt="Solis" /></div>
+      <div class="partner-logo"><img src="Images/Solaxpower.png" alt="Solax Power" /></div>
+      <div class="partner-logo"><img src="Images/Deye.png" alt="Deye" /></div>
+      <div class="partner-logo"><img src="Images/Aesolar.png" alt="AE Solar" /></div>
+      <div class="partner-logo"><img src="Images/Canadasolar.png" alt="Canadian Solar" /></div>
+      <div class="partner-logo"><img src="Images/Dongjin Group.png" alt="Dongjin Group" /></div>
+      <div class="partner-logo"><img src="Images/goodwe.jpg" alt="GoodWe" /></div>
+      <div class="partner-logo"><img src="Images/jasolar.jpg" alt="JA Solar" /></div>
+      <div class="partner-logo"><img src="Images/aiko.jpg" alt="AIKO" /></div>
+      <div class="partner-logo"><img src="Images/sungrow.jpg" alt="Sungrow" /></div>
+      <div class="partner-logo"><img src="Images/dyness.jpg" alt="Dyness" /></div>
+      <div class="partner-logo"><img src="Images/Jinko.png" alt="Jinko Solar" /></div>
+      <div class="partner-logo"><img src="Images/Srne.png" alt="SRNE" /></div>
+      <div class="partner-logo"><img src="Images/Trinasolar.png" alt="Trina Solar" /></div>
+      <div class="partner-logo"><img src="Images/Solis.png" alt="Solis" /></div>
+      <div class="partner-logo"><img src="Images/Solaxpower.png" alt="Solax Power" /></div>
+      <div class="partner-logo"><img src="Images/Deye.png" alt="Deye" /></div>
+      <div class="partner-logo"><img src="Images/Aesolar.png" alt="AE Solar" /></div>
+      <div class="partner-logo"><img src="Images/Canadasolar.png" alt="Canadian Solar" /></div>
+      <div class="partner-logo"><img src="Images/Dongjin Group.png" alt="Dongjin Group" /></div>
+      <div class="partner-logo"><img src="Images/goodwe.jpg" alt="GoodWe" /></div>
+      <div class="partner-logo"><img src="Images/jasolar.jpg" alt="JA Solar" /></div>
+      <div class="partner-logo"><img src="Images/aiko.jpg" alt="AIKO" /></div>
+      <div class="partner-logo"><img src="Images/sungrow.jpg" alt="Sungrow" /></div>
+      <div class="partner-logo"><img src="Images/dyness.jpg" alt="Dyness" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────── -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" style="margin-bottom:0.5rem;display:inline-flex">
+          <div class="logo-icon">
+            <img src="Images/LOGO.png" alt="SUNWISE Logo" />
+          </div>
+          <span class="logo-text shiny-text" data-text="SUNWISE">SUN<span>WISE</span></span>
+        </a>
+        <p>Full-service solar energy provider for residential, commercial, and industrial sectors across the Philippines. Building a cleaner future, one rooftop at a time.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="https://www.facebook.com/profile.php?id=61556579514456" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.tiktok.com/@sunwise.solar.ene4?_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.87a8.28 8.28 0 0 0 4.8 1.54V6.96a4.84 4.84 0 0 1-1.1-.27z"/></svg>
+          </a>
+          <a class="social-btn" href="https://maps.app.goo.gl/LVYW18UKjsc1fDMJ8" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </a>
+          <a class="social-btn" href="mailto:sunwise.ph@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Contacts</h5>
+        <ul>
+          <li>
+            <a href="tel:+639946855312">📱0994-685-5312</a>
+            <a href="viber://chat?number=%2B639946855312" target="_blank" rel="noopener noreferrer" aria-label="Viber" style="margin-left:6px;">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;"><path d="M12.004 2C6.478 2 2 6.26 2 11.57c0 3.09 1.706 5.81 4.35 7.57-.15.55-.96 2.49-1.04 2.83-.1.4.15.39.32.28.13-.08 2.46-1.68 3.46-2.37.59.1 1.2.16 1.83.16 5.526 0 10.004-4.26 10.004-9.57C20.926 6.26 16.53 2 12.004 2zm5.55 12.76c-.23.66-1.34 1.28-2.19 1.44-.58.11-1.34.2-3.92-.84-3.3-1.34-5.4-4.66-5.56-4.87-.16-.21-1.3-1.74-1.3-3.32 0-1.58.83-2.36 1.13-2.67.3-.31.65-.39.87-.39h.63c.2 0 .47-.07.74.57.27.64.92 2.24 1 2.4.08.16.14.35.03.56-.11.21-.16.35-.32.54-.16.19-.34.42-.48.57-.16.16-.33.34-.14.66.19.32.86 1.42 1.85 2.3 1.27 1.13 2.34 1.48 2.68 1.64.34.16.54.13.74-.08.2-.21.84-.98 1.06-1.32.22-.34.44-.28.74-.17.3.11 1.92.91 2.25 1.07.33.16.55.24.63.37.08.14.08.8-.15 1.46z"/></svg>
+            </a>
+          </li>
+          <li><a href="tel:+639939097102">📱0993-909-7102</a></li>
+          <li><a href="mailto:sunwise.ph@gmail.com">📩 sunwise.ph@gmail.com</a></li>
+          <li><a href="https://www.sunwiseph.com/" target="_blank" rel="noopener noreferrer">🌐 www.sunwiseph.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Magazine</h5>
+        <ul>
+          <li><a href="#read-magazine">Magazine 2026</a></li>
+          <li><a href="sunwise-magazine-2026.pdf" download>Download the PDF</a></li>
+          <li><a href="#cta-banner">Free site inspection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Location</h5>
+        <ul>
+          <li>Philippines</li>
+          <li>Francisco Homes III</li>
+          <li>Brgy Muzon Proper</li>
+          <li>City Of San Jose Del Monte</li>
+          <li>Bulacan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SUNWISE Solar Philippines. All rights reserved.</span>
+      <span>Made with care in the Philippines</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── SCRIPTS ─────────────────────────────────── -->
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  /* Keeps the background video playing: some browsers block autoplay until the visitor interacts. */
+  var bgVideo = document.getElementById('bg-video');
+  if (bgVideo) {
+    var kick = function() { if (bgVideo.paused) bgVideo.play().catch(function() {}); };
+    bgVideo.play().catch(function() { bgVideo.muted = true; bgVideo.play().catch(function() {}); });
+    ['click','touchstart','keydown','scroll'].forEach(function(ev) {
+      window.addEventListener(ev, kick, { passive: true, once: false });
+    });
+  }
+
+  window.addEventListener('scroll', function() {
+    var nav = document.getElementById('navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  document.querySelectorAll('.file-upload-input').forEach(function(input) {
+    input.addEventListener('change', function() {
+      var label = input.closest('.file-upload-label');
+      var text = label.querySelector('.file-upload-text');
+      var group = input.closest('.cta-form-group');
+      var preview = group.querySelector('.image-preview');
+      if (input.files && input.files.length > 0) {
+        text.textContent = input.files[0].name;
+        label.classList.add('has-file');
+        if (preview) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      } else {
+        text.textContent = 'Choose or drag photo';
+        label.classList.remove('has-file');
+        if (preview) { preview.style.display = 'none'; }
+      }
+    });
+  });
+
+  var systemTypeSelect = document.getElementById('systemType');
+  var kilowattSelect = document.getElementById('kilowatt');
+  var ongridOptions = ['3.6KW','6.0KW','7.2KW','8.4KW','9.6KW','10.8KW','12.0KW','16.0KW'];
+  var hybridOptions = ['3.6KW','6.0KW','7.2KW','8.4KW','10.8KW'];
+  function updateKilowatt() {
+    var isOngrid = systemTypeSelect.value === 'Ongrid System';
+    var options = isOngrid ? ongridOptions : hybridOptions;
+    kilowattSelect.innerHTML = options.map(function(opt) {
+      return '<option>' + opt + '</option>';
+    }).join('');
+  }
+  systemTypeSelect.addEventListener('change', updateKilowatt);
+
+  /* COVERFLOW CAROUSEL */
+  (function() {
+    var stage = document.getElementById('cfStage');
+    var viewport = document.getElementById('cfViewport');
+    if (!stage || !viewport) return;
+
+    var projects = [
+      { src: 'Images/image 1.jpg', alt: 'Calumpit, Bulacan', title: 'Calumpit, Bulacan', desc: '7.2kw Hybrid system, 6kw Solis Hybrid Inverter and 10kwh dongjin battery. | Residential' },
+      { src: 'Images/image 2.jpg', alt: 'Vista Verde, North Caloocan', title: 'Vista Verde, North Caloocan', desc: '9.6kw Solar panels, 8kw Srne Hybrid Inverter and 32kwh battery. | Commercial' },
+      { src: 'Images/DJI_0002.JPG', alt: 'Aerial Solar Installation', title: 'Mandaluyong', desc: '11.16kw hybrid system' },
+      { src: 'Images/DJI_0020.JPG', alt: 'Solar Panel Aerial', title: 'Pasig City', desc: '6.2kw hybrid system' },
+      { src: 'Images/DJI_0047.JPG', alt: 'Solar Farm Overview', title: 'Valenzuela City', desc: '19.84kw hybrid system' },
+      { src: 'Images/DJI_0095.JPG', alt: 'Aerial Project Shot', title: 'Tondo, Manila', desc: '16.11kw hybrid system' },
+      { src: 'Images/DJI_0104.JPG', alt: 'Installation Progress', title: 'Novaliches', desc: '6.2kw hybrid system' },
+      { src: 'Images/DJI_0219.JPG', alt: 'Completed Project', title: 'Makati City', desc: '6.2kw hybrid system' },
+      { src: 'Images/IMG_7048.JPG', alt: 'Ground Level View', title: 'Quezon City', desc: '7.2kw hybrid system' }
+    ];
+    var count = projects.length;
+
+    var ACTIVE_W = 600, ACTIVE_H = 400;
+    var REST_W = 200, REST_H = 270;
+    var GAP = 30;
+    var MOVE_DUR = 0.5;
+
+    var pos = 5;
+    var target = 5;
+    var rafId = null;
+    var lastT = null;
+
+    function getSizing() {
+      var w = window.innerWidth;
+      if (w <= 480) return { aw: 300, ah: 220, rw: 100, rh: 160, gap: 15 };
+      if (w <= 768) return { aw: 400, ah: 280, rw: 130, rh: 190, gap: 20 };
+      if (w <= 1024) return { aw: 500, ah: 340, rw: 170, rh: 230, gap: 25 };
+      return { aw: ACTIVE_W, ah: ACTIVE_H, rw: REST_W, rh: REST_H, gap: GAP };
+    }
+
+    function relOf(idx, p) {
+      var r = ((idx - p) % count + count) % count;
+      if (r > count / 2) r -= count;
+      return r;
+    }
+
+    function blend(rel) { return Math.min(Math.abs(rel), 1); }
+
+    function xForRel(rel, s) {
+      var ar = Math.abs(rel);
+      var c1 = s.aw / 2 + s.gap + s.rw / 2;
+      var pitch = s.rw + s.gap;
+      var mag = ar <= 1 ? ar * c1 : c1 + (ar - 1) * pitch;
+      return (rel < 0 ? -1 : 1) * mag;
+    }
+
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    var cards = [];
+    for (var i = 0; i < count; i++) {
+      var card = document.createElement('div');
+      card.className = 'cf-card';
+      card.dataset.index = i;
+
+      var img = document.createElement('img');
+      img.src = projects[i].src;
+      img.alt = projects[i].alt;
+      img.draggable = false;
+      card.appendChild(img);
+
+      var info = document.createElement('div');
+      info.className = 'cf-card-info';
+      info.innerHTML = '<h4>' + projects[i].title + '</h4><p>' + projects[i].desc + '</p>';
+      card.appendChild(info);
+
+      (function(idx) {
+        card.addEventListener('click', function() {
+          var cur = target;
+          var d = idx - cur;
+          d = ((d % count) + count) % count;
+          if (d > count / 2) d -= count;
+          lockAndGo(cur + d);
+        });
+      })(i);
+
+      viewport.appendChild(card);
+      cards.push(card);
+    }
+
+    function lockAndGo(newTarget) {
+      target = newTarget;
+      ensureRunning();
+    }
+
+    function step(d) { lockAndGo(target + d); }
+
+    function ensureRunning() {
+      if (rafId == null) {
+        lastT = null;
+        rafId = requestAnimationFrame(tick);
+      }
+    }
+
+    function tick(t) {
+      var last = lastT !== null ? lastT : t;
+      var dt = Math.min((t - last) / 1000, 1 / 30);
+      lastT = t;
+
+      var diff = target - pos;
+      var stepSize = (1 / Math.max(0.08, MOVE_DUR)) * dt;
+      var arriving = Math.abs(diff) <= stepSize;
+
+      if (arriving) {
+        pos = target;
+        rafId = null;
+        lastT = null;
+        render();
+        return;
+      }
+
+      pos += Math.sign(diff) * stepSize;
+      rafId = requestAnimationFrame(tick);
+      render();
+    }
+
+    function render() {
+      var s = getSizing();
+
+      for (var i = 0; i < count; i++) {
+        var rel = relOf(i, pos);
+        var ax = Math.abs(rel);
+        var isActive = rel === 0;
+        var b = blend(rel);
+
+        var w = lerp(s.aw, s.rw, b);
+        var h = lerp(s.ah, s.rh, b);
+        var x = xForRel(rel, s);
+        var opacity = ax <= 1 ? 1 : 0;
+        var z = Math.round(1000 - ax * 100);
+        var br = (Math.max(0, Math.min(20, 3)) / 20) * (Math.min(w, h) / 2);
+
+        var el = cards[i];
+        el.style.width = w + 'px';
+        el.style.height = h + 'px';
+        el.style.left = '50%';
+        el.style.top = '50%';
+        el.style.transform = 'translate(calc(-50% + ' + x + 'px), -50%)';
+        el.style.opacity = opacity;
+        el.style.zIndex = z;
+        el.style.borderRadius = br + 'px';
+        el.style.cursor = isActive ? 'default' : 'pointer';
+
+        if (isActive) el.classList.add('cf-active');
+        else el.classList.remove('cf-active');
+      }
+    }
+
+    stage.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+    });
+
+    var dragStartX = 0;
+    var dragStartPos = 0;
+    var dragging = false;
+
+    stage.addEventListener('touchstart', function(e) {
+      dragStartX = e.touches[0].clientX;
+      dragStartPos = pos;
+      dragging = true;
+    }, { passive: true });
+
+    stage.addEventListener('touchmove', function(e) {
+      if (!dragging) return;
+      var dx = e.touches[0].clientX - dragStartX;
+      var s = getSizing();
+      var cardPitch = s.rw + s.gap;
+      var offset = -(dx / cardPitch);
+      pos = dragStartPos + offset;
+      target = pos;
+      render();
+    }, { passive: true });
+
+    stage.addEventListener('touchend', function() {
+      if (!dragging) return;
+      dragging = false;
+      lockAndGo(Math.round(pos));
+    }, { passive: true });
+
+    setInterval(function() { step(1); }, 2000);
+
+    window.addEventListener('resize', render);
+
+    render();
+  })();
+</script>
+
+<!-- ─── MAGAZINE FLIPBOOK ENGINE (unchanged) ───── -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(async function(){
+const PDF_URL='sunwise-magazine-2026.pdf';
+const FLIP_MS=800;
+const $=id=>document.getElementById(id);
+const status=$('status'),errorBox=$('error'),counter=$('counter'),book=$('book'),stage=document.querySelector('.stage');
+const ZOOMS=[1,1.25,1.5,2,2.5,3];
+let pdf=null,total=0,ratio=0.707,zi=0,curPage=1,token=0,animating=false,shown=null;
+const cache=new Map();
+const isMobile=()=>window.innerWidth<760;
+
+function spreads(){
+  if(isMobile())return Array.from({length:total},(_,i)=>[i+1]);
+  const r=[[null,1]];
+  for(let p=2;p<=total;p+=2)r.push(p+1<=total?[p,p+1]:[p,null]);
+  return r;
+}
+function spreadIndex(list){
+  for(let i=0;i<list.length;i++)if(list[i].includes(curPage))return i;
+  return 0;
+}
+function baseSize(){
+  const cs=getComputedStyle(stage);
+  const padX=parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight);
+  const padY=parseFloat(cs.paddingTop)+parseFloat(cs.paddingBottom);
+  const viewer=document.querySelector('.viewer');
+  const cols=isMobile()?1:2;
+  viewer.style.maxWidth='';
+  let availW,availH;
+  if(document.fullscreenElement){
+    stage.style.height='';
+    availW=stage.clientWidth-padX;
+    availH=stage.clientHeight-padY;
+  }else if(isMobile()){
+    availW=stage.clientWidth-padX;
+    availH=Math.min(availW/ratio,Math.max(320,window.innerHeight-110));
+    stage.style.height=Math.round(availH+padY)+'px';
+  }else{
+    availW=stage.clientWidth-padX;
+    /* pages fill the stage width, but never taller than the screen */
+    availH=Math.min(availW/cols/ratio,isMobile()?1500:Math.max(560,window.innerHeight-30));
+    stage.style.height=Math.round(availH+padY)+'px';
+  }
+  const w=Math.max(160,Math.min(availW/cols,availH*ratio));
+  return {w:w,h:w/ratio};
+}
+/* Pages are drawn with extra detail (at least 2x the screen pixels, more when the visitor pinch-zooms)
+   and the browser shrinks them smoothly, so text stays sharp even if the visitor zooms in. */
+function renderScale(){
+  const dpr=window.devicePixelRatio||1;
+  const vv=(window.visualViewport&&window.visualViewport.scale)?Math.max(1,window.visualViewport.scale):1;
+  return Math.max(dpr,2)*vv;
+}
+function sizes(){
+  const rs=renderScale();
+  const b=baseSize();
+  const z=ZOOMS[zi];
+  const H=b.h*z,W=b.w*z;
+  const Hpx=Math.min(4800,Math.max(200,Math.round(H*rs)));
+  const Wpx=Math.round(Hpx*ratio);
+  return {dpr:rs,Hpx:Hpx,Wpx:Wpx,W:W,H:H};
+}
+function renderPage(num,S){
+  const key=num+'_'+S.Hpx;
+  if(cache.has(key))return cache.get(key);
+  const prom=(async()=>{
+    const page=await pdf.getPage(num);
+    const base=page.getViewport({scale:1});
+    const vp=page.getViewport({scale:S.Hpx/base.height});
+    const c=document.createElement('canvas');
+    c.width=S.Wpx;c.height=S.Hpx;
+    const ctx=c.getContext('2d',{alpha:false});
+    ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);
+    await page.render({canvasContext:ctx,viewport:vp}).promise;
+    page.cleanup();
+    return c;
+  })();
+  cache.set(key,prom);
+  prom.catch(()=>cache.delete(key));
+  while(cache.size>9)cache.delete(cache.keys().next().value);
+  return prom;
+}
+function getCanvases(sp,S){return Promise.all(sp.map(n=>n?renderPage(n,S):Promise.resolve(null)));}
+function fit(c,S){c.style.width=S.W+'px';c.style.height=S.H+'px';return c;}
+function makeSlot(cls,left,canvas,S){
+  const d=document.createElement('div');
+  d.className='slot '+cls+(canvas?' has':'');
+  d.style.left=left+'px';d.style.width=S.W+'px';d.style.height=S.H+'px';
+  if(canvas)d.appendChild(fit(canvas,S));
+  return d;
+}
+function setBookSize(S,two){book.style.width=(two?2*S.W:S.W)+'px';book.style.height=S.H+'px';}
+function buildStatic(sp,cv,S){
+  const two=sp.length===2;
+  setBookSize(S,two);
+  if(two)book.replaceChildren(makeSlot('left',0,cv[0],S),makeSlot('right',S.W,cv[1],S));
+  else book.replaceChildren(makeSlot('single',0,cv[0],S));
+}
+function updateUI(list,idx){
+  const nums=list[idx].filter(Boolean);
+  counter.textContent=nums.length===2?'Pages '+nums[0]+'–'+nums[1]+' of '+total:'Page '+nums[0]+' of '+total;
+  $('first').disabled=idx<=0;$('prev').disabled=idx<=0;
+  $('next').disabled=idx>=list.length-1;$('last').disabled=idx>=list.length-1;
+  $('zoomout').disabled=zi<=0;$('zoomin').disabled=zi>=ZOOMS.length-1;
+  $('zoomin').textContent='🔍 Zoom +'+(zi>0?' ('+Math.round(ZOOMS[zi]*100)+'%)':'');
+}
+function prefetch(list,idx,S){
+  [list[idx+1],list[idx-1]].forEach(sp=>{if(sp)getCanvases(sp,S).catch(()=>{});});
+}
+async function layoutStatic(idx){
+  const my=++token;
+  const list=spreads();
+  idx=Math.max(0,Math.min(idx,list.length-1));
+  const sp=list[idx],S=sizes();
+  try{
+    const cv=await getCanvases(sp,S);
+    if(my!==token)return;
+    buildStatic(sp,cv,S);
+    curPage=sp.find(Boolean);
+    shown={idx:idx,Hpx:S.Hpx};
+    stage.scrollLeft=(stage.scrollWidth-stage.clientWidth)/2;
+    stage.scrollTop=0;
+    updateUI(list,idx);
+    status.textContent=total+' pages · Ready to read';
+    prefetch(list,idx,S);
+  }catch(e){console.error(e);status.textContent='A page could not be drawn. Please refresh.';}
+}
+function makeFlipper(front,back,S,left,origin){
+  const f=document.createElement('div');
+  f.className='flipper';
+  f.style.left=left+'px';f.style.width=S.W+'px';f.style.height=S.H+'px';f.style.transformOrigin=origin;
+  const a=document.createElement('div');a.className='face front';
+  if(front)a.appendChild(fit(front,S));
+  f.appendChild(a);
+  const b=document.createElement('div');b.className='face back';
+  if(back)b.appendChild(fit(back,S));
+  f.appendChild(b);
+  return f;
+}
+async function goTo(idx){
+  if(animating)return;
+  const list=spreads();
+  idx=Math.max(0,Math.min(idx,list.length-1));
+  const from=shown?shown.idx:0;
+  if(idx===from)return;
+  const S=sizes();
+  if(!shown||S.Hpx!==shown.Hpx||Math.abs(idx-from)!==1){await layoutStatic(idx);return;}
+  animating=true;
+  token++;
+  try{
+    const A=list[from],B=list[idx],fwd=idx>from;
+    const [cA,cB]=await Promise.all([getCanvases(A,S),getCanvases(B,S)]);
+    let flipper;
+    if(A.length===2){
+      if(fwd){
+        book.replaceChildren(makeSlot('left',0,cA[0],S),makeSlot('right',S.W,cB[1],S));
+        flipper=makeFlipper(cA[1],cB[0],S,S.W,'left center');
+      }else{
+        book.replaceChildren(makeSlot('left',0,cB[0],S),makeSlot('right',S.W,cA[1],S));
+        flipper=makeFlipper(cA[0],cB[1],S,0,'right center');
+      }
+      book.appendChild(flipper);
+      flipper.getBoundingClientRect();
+      flipper.style.transition='transform '+FLIP_MS+'ms cubic-bezier(.45,.05,.25,1)';
+      flipper.style.transform=fwd?'rotateY(-180deg)':'rotateY(180deg)';
+    }else{
+      book.replaceChildren(makeSlot('single',0,fwd?cB[0]:cA[0],S));
+      flipper=makeFlipper(fwd?cA[0]:cB[0],null,S,0,'left center');
+      flipper.style.transform=fwd?'none':'rotateY(-100deg)';
+      flipper.style.opacity=fwd?'1':'0';
+      book.appendChild(flipper);
+      flipper.getBoundingClientRect();
+      flipper.style.transition='transform '+FLIP_MS+'ms cubic-bezier(.45,.05,.25,1),opacity '+FLIP_MS+'ms ease';
+      flipper.style.transform=fwd?'rotateY(-100deg)':'none';
+      flipper.style.opacity=fwd?'0':'1';
+    }
+    await new Promise(r=>setTimeout(r,FLIP_MS+40));
+    buildStatic(B,cB,S);
+    curPage=B.find(Boolean);
+    shown={idx:idx,Hpx:S.Hpx};
+    updateUI(list,idx);
+    prefetch(list,idx,S);
+  }catch(e){
+    console.error(e);
+    await layoutStatic(idx);
+  }
+  animating=false;
+}
+const cur=()=>shown?shown.idx:0;
+const last=()=>spreads().length-1;
+
+let wired=false;
+function wire(){
+  if(wired)return;wired=true;
+  $('first').onclick=()=>goTo(0);
+  $('prev').onclick=()=>goTo(cur()-1);
+  $('next').onclick=()=>goTo(cur()+1);
+  $('last').onclick=()=>goTo(last());
+  $('zoomin').onclick=()=>{if(zi<ZOOMS.length-1&&!animating){zi++;layoutStatic(cur());}};
+  $('zoomout').onclick=()=>{if(zi>0&&!animating){zi--;layoutStatic(cur());}};
+  $('fullscreen').onclick=()=>{
+    const el=document.querySelector('.viewer');
+    if(!document.fullscreenElement)el.requestFullscreen&&el.requestFullscreen();
+    else document.exitFullscreen&&document.exitFullscreen();
+  };
+  book.addEventListener('click',e=>{
+    if(ZOOMS[zi]>1)return;
+    const r=book.getBoundingClientRect();
+    const frac=(e.clientX-r.left)/r.width;
+    if(frac<(isMobile()?0.4:0.5))goTo(cur()-1);else goTo(cur()+1);
+  });
+  let tx=0,ty=0;
+  stage.addEventListener('touchstart',e=>{tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
+  stage.addEventListener('touchend',e=>{
+    if(ZOOMS[zi]>1)return;
+    const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>50&&Math.abs(dy)<60){if(dx<0)goTo(cur()+1);else goTo(cur()-1);}
+  },{passive:true});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight')goTo(cur()+1);
+    else if(e.key==='ArrowLeft')goTo(cur()-1);
+    else if(e.key==='+'||e.key==='=')$('zoomin').click();
+    else if(e.key==='-')$('zoomout').click();
+  });
+  let rt=null;
+  const relayout=()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!animating&&pdf)layoutStatic(spreadIndex(spreads()));},220);};
+  window.addEventListener('resize',relayout);
+  if(window.visualViewport){
+    let vt=null,lastScale=window.visualViewport.scale||1;
+    window.visualViewport.addEventListener('resize',()=>{
+      clearTimeout(vt);
+      vt=setTimeout(()=>{
+        const sc=window.visualViewport.scale||1;
+        if(Math.abs(sc-lastScale)>0.05){lastScale=sc;if(!animating&&pdf)layoutStatic(cur());}
+      },300);
+    });
+  }
+  document.addEventListener('fullscreenchange',relayout);
+}
+async function start(src){
+  if(!window.pdfjsLib)throw new Error('The PDF viewer library did not load. Check your internet connection and refresh the page.');
+  pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  status.textContent='Loading magazine PDF…';
+  cache.clear();shown=null;curPage=1;
+  pdf=await pdfjsLib.getDocument(src).promise;
+  total=pdf.numPages;
+  const p1=await pdf.getPage(1);
+  const v1=p1.getViewport({scale:1});
+  ratio=v1.width/v1.height;
+  wire();
+  errorBox.classList.add('hide');
+  await layoutStatic(0);
+}
+function showError(e){
+  console.error(e);
+  status.textContent='The flipbook could not load';
+  errorBox.classList.remove('hide');
+  errorBox.textContent='Sorry, the flipbook could not be prepared. '+(e&&e.message?e.message:'Please refresh and try again.')+' You can still download the complete magazine using the Download the PDF button below the magazine. ';
+  const lab=document.createElement('label');
+  lab.className='btn primary';lab.style.cssText='margin-top:14px;cursor:pointer;display:inline-flex';
+  lab.textContent='📂 Open the PDF from this computer';
+  const inp=document.createElement('input');
+  inp.type='file';inp.accept='application/pdf,.pdf';inp.style.display='none';
+  inp.onchange=async()=>{
+    const f=inp.files&&inp.files[0];if(!f)return;
+    try{await start({data:new Uint8Array(await f.arrayBuffer())});}catch(err){showError(err);}
+  };
+  lab.appendChild(inp);
+  errorBox.appendChild(document.createElement('br'));
+  errorBox.appendChild(lab);
+  counter.textContent='PDF download available';
+}
+try{
+  let url=PDF_URL;
+  try{url=new URL(PDF_URL,document.baseURI).href;}catch(_){}
+  await start({url:url});
+}catch(e){showError(e);}
+})();
+</script>
+</body>
+</html>
